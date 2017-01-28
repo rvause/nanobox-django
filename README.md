@@ -23,6 +23,9 @@ cd nanobox-django
 # Add a convenient way to access your app from the browser
 nanobox dns add local django.dev
 
+# Set the secret key environment variable
+nanobox evar add local SECRET_KEY=mysecretkey
+
 # Run django as you would normally, with Nanobox
 nanobox run python manage.py runserver 0.0.0.0:8000
 ```
